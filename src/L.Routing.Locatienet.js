@@ -195,7 +195,7 @@
 					text: instr.description,
 					distance: instr.accDistance,
 					time: instr.accTime,
-					index: coordinates.findIndex(c => c.lat == instr.coordinate.y && c.lng == instr.coordinate.x),
+					index: coordinates.findIndex((c) => c.lat == instr.coordinate.y && c.lng == instr.coordinate.x),
 					exit: 0,
 				});
 			}
@@ -211,7 +211,7 @@
 
 			for (i = 0; instructions && i < instructions.length; i++) {
 				if (instructions[i].event === 'WAYPOINT') {
-					idx = coordinates.findIndex(c => c.lat == instructions[i].coordinate.y && c.lng == instructions[i].coordinate.x);
+					idx = coordinates.findIndex((c) => c.lat == instructions[i].coordinate.y && c.lng == instructions[i].coordinate.x);
 					wpIndices.push(idx);
 					wps.push({
 						latLng: coordinates[idx],
