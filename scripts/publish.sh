@@ -17,8 +17,8 @@ git rebase origin/gh-pages
 
 mkdir -p dist
 mkdir -p _data
-cp -a $CWD/dist/lrm-graphhopper.js dist/lrm-graphhopper-$VERSION.js
-cp -a $CWD/dist/lrm-graphhopper.min.js dist/lrm-graphhopper-$VERSION.min.js
+cp -a $CWD/dist/lrm-locatienet.js dist/lrm-locatienet-$VERSION.js
+cp -a $CWD/dist/lrm-locatienet.min.js dist/lrm-locatienet-$VERSION.min.js
 echo -e "- version: $VERSION\n" >>_data/versions.yml
 
 echo `pwd`
