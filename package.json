@@ -1,0 +1,35 @@
+{
+  "name": "lrm-locatienet",
+  "version": "1.0.0",
+  "description": "Support for Locatienet in Leaflet Routing Machine",
+  "main": "src/L.Routing.Locatienet.js",
+    "scripts": {
+        "watch": "watchify -t browserify-shim src/L.Routing.Locatienet.js -o dist/lrm-locatienet.js --debug --verbose",
+        "dist": "browserify -t browserify-shim src/L.Routing.Locatienet.js -o dist/lrm-locatienet.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+  "keywords": [
+    "leaflet",
+    "routing",
+    "locatienet"
+  ],
+  "author": "Remco Zut <rzu@locatienet.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/locatienet/lrm-locatienetbv.git"
+  },
+  "homepage": "https://github.com/locatienetbv/lrm-locatienet",
+  "bugs": "https://github.com/locatienetbv/lrm-locatienet/issues",
+  "dependencies": {
+  },
+  "browserify-shim": {
+    "leaflet": "global:L"
+  },
+  "devDependencies": {
+    "browserify": "^8.1.3",
+    "browserify-shim": "^3.8.2",
+    "uglify-js": "^2.4.16",
+    "watchify": "^4.0.0"
+  }
+}
