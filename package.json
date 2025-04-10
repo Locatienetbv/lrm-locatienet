@@ -4,8 +4,7 @@
   "description": "Support for Locatienet in Leaflet Routing Machine",
   "main": "src/L.Routing.Locatienet.js",
     "scripts": {
-        "watch": "watchify -t browserify-shim src/L.Routing.Locatienet.js -o dist/lrm-locatienet.js --debug --verbose",
-        "dist": "browserify -t browserify-shim src/L.Routing.Locatienet.js -o dist/lrm-locatienet.js && uglifyjs dist/lrm-locatienet.js >dist/lrm-locatienet.min.js",
+        "dist": "if not exist dist mkdir dist && browserify -t browserify-shim src/L.Routing.Locatienet.js -o dist/lrm-locatienet.js && uglifyjs dist/lrm-locatienet.js >dist/lrm-locatienet.min.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
   "keywords": [
